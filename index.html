@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gabriel Ruggiero</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @media screen and (max-width: 1140px) {
+          .heropage {
+            flex-direction: column;
+          }
+          .heroImage {
+            align-self: center;
+          }
+          .banner {
+           margin-bottom: 100px;
+          }
+        }
+        @media screen and (max-width: 780px) {
+          .grid {
+            grid-template-columns: repeat(1 , 1fr);
+          }
+          .image1, .text2, .image4 {
+            order: 1;
+          }
+          .text3, .image5, .text6 {
+            order: 2;
+          }
+          .makingOf video {
+            max-width: 420px;
+            outline: none;
+          }
+        }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+      <a href="https://www.linkedin.com/in/gabriel-ruggiero/" target="_blank"><img id="contactMe" src="photo/garu.png"/></a>
+      <div class="logo"><lottie-player src="https://lottie.host/2e68cbd2-625c-4432-875d-99254a93f466/eq5v0q0a9c.json" background="transparent" speed="0.6" style="width: 96px; height: 96px;" loop autoplay></lottie-player></div>
+      <a class="cv" href="photo/cv-gabriel-ruggiero.pdf" target="_blank">CV &#128293;</a>
+  </section>
+  <section class="heropage">
+       <div class="heroText">
+        <h1>look </br >no more</h1>
+        <p><b>Gabriel Ruggiero</b>, creative director with nearly a decade of experience in design, backed by a <b>master's degree in design and visual culture</b>.</p>
+      </div>
+      <div class="heroImage">
+            <img class="banner" src="photo/garu.gif"/>
+      </div>
+  </section>
+  <section class="portfolio">
+    <div class="title">
+      <h2 style="color: #EDE9F2;">One-man Show</h2>
+      <ul class="tags">
+        <li class="item">design thinking</li>
+        <li class="item">video making</li>
+        <li class="item">web developing</li>
+      </ul>
+      <p style="color: #EDE9F2;">From developing and coding the website to editing the final video concept.</p> 
+      <a class="click" onclick="toggleVideo();">Play video &#128640;</a>
+    </div>  
+    <div class="makingOf">
+      <video src="photo/garu.mp4" controls="true" autoplay="true"></video>
+      <img class="close" src="photo/close.png" onclick="toggleVideo();"/>
+    </div>
+  </section>
+  <section class="cases">
+    <div class="grid">
+      <div class="image1">
+        <a href="https://www.zoop.club/" target="_blank"><img id="jpeg" src="photo/zoop.jpg"/></a>
+      </div>
+      <div class="text2">
+          <h2>from concept </br> to creation</h2>
+          <p>With the same founder of <b>Only Fans</b>, Zoop is a Web 3 social media platform. <b>As their creative director</b>, I was responsible for managing projects such as our presence on the <b>All-Star NBA game</b> in South Lake City in 2023.</p>
+          <img class="client" src="photo/nba.png"/>
+      </div> 
+      <div class="text3">
+            <h2>No matter</br>the challenge</h2>
+            <p>Throughout my <b>agency years</b>, I had invaluable opportunities such as a collaboration between a renowned Portuguese wine brand and the <b>movie franchise 'Kingsman'</b> that counted with direct interaction with <b>Disney to secure concept approval</b>.</p>
+            <img class="client" src="photo/disney.png"/>
+      </div>
+      <div class="image4">
+        <a href="https://www.youtube.com/watch?v=FLnHD-JlrJ4" target="_blank"><img id="jpeg" src="photo/kingsman.jpg"/></a>
+      </div> 
+      <div class="image5">
+        <a href="https://www.famoushostels.com/eco-wanderer/" target="_blank"><img id="jpeg"src="photo/hostels.jpg"/></a>
+      </div>
+      <div class="text6"> 
+            <h2>for all</br>projects</h2>
+            <p><b>Award-winning sustainable campaign</b> in partnership with Eurail, <b>the Eco wander project</b> is one of the examples of my efficiency in managing projects even when challenged by a <b>short deadline</b>.</p>
+            <img class="client" src="photo/eurail.png"/>
+      </div>
+    </div>
+  </section>
+  <section class="illustrations">
+    <div class="title">
+      <h2 style="color: #EDE9F2;">illustrations too:</h2>
+    </div>  
+    <section class="heropage">
+      <div class="heroImage">
+        <img class="jpeg" src="photo/clients-1.jpg"/>
+    </div>
+     <div class="heroImage">
+           <img class="jpeg" src="photo/clients-2.jpg"/>
+     </div>
+ </section>
+  </section>
+  <div class="footer">
+      <p style="color: #EDE9F2;">garu.artbox@gmail.com</br>&#127477;&#127481; +351 910 677 310</p>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
